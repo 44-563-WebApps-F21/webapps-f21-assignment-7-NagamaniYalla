@@ -76,7 +76,18 @@
             else
                 return verticalDistance
     }
-	
+	function getPosition(value) {
+        var elementValue = 0
+        for(var i=0; i<4; i++){
+            for(var j=0; j<6; j++){
+                if(elementValue == value){
+                    return [i+1, j+1]
+                }
+                elementValue++
+            }
+        }
+    }
+		
 </script>
 </body>
 </html>
